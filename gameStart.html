@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #tutorial1{
+                display:block;
+            }
+            #tutorial2{
+                display:none;
+            }
+            #tutorial3{
+                display:none;
+            }
+            #tutorial4{
+                display:none;
+            }
+            #navBar{
+                display:none;
+            }
+        </style>
+        <script>
+            function tutorial(x){
+                
+                y = String(x)
+                z = String(x + 1)
+                //alert(x);
+                //alert("tutorial" + y);
+                //alert("tutorial" + z);
+                document.getElementById("tutorial" + y).style.display = "none";
+                document.getElementById("tutorial" + z).style.display = "block";
+                if(x == 2){
+                    document.getElementById("navBar").style.display = "block;"
+                }
+                if(x == 3){
+                    document.getElementById("navBar").style.display = "block;"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="navBar">
+            buh
+        </div>
+        <div id="tutorial1">
+            I needed to make this website quick, but the scammer is back at it again. I should giv you a nickname, how about Nickname! You nickname can be Nickname!<br>
+            Anyway, I have some new tools for you to use, we actually got a budget! <br>
+            Click the button below to see you r first tool.<br>
+            <button type="button" onclick="tutorial(1)">Click Me!</button>
+            <br>
+        </div>
+        <div id="tutorial2">
+            It's a nav bar! I got you a nav bar! Now whenever you visit a website it gets added to your nav bar so you can get back there quickly.<br>
+            That's not all however, click the next button and see!<br>
+            <button type="button" onclick="tutorial(2)">Click Me!</button>
+            <br>
+        </div>
+        <div id="tutorial3">
+            I was able to get you code access! Below is called a python panel. <br>
+            A python panel is a hole in the website that allows you to access pre-written python code<br>
+            The hacker loves using python we can find out tons about them through these!<br>
+            <iframe src="https://replit.com/@WafflesCoding/pythonPanelTutorial?embed=true&theme=light" width="600" height="400"></iframe> <br>
+            Click the button below to see the plan.
+            <button type="button" onclick="tutorial(3)">Click Me!</button>
+        </div>
+        <div id="tutorial4">
+            Alright I've told you about the nav bar and python panels it's time to get started. <br>
+            The hacker is working on a big project, fortunatley we can find out what it is and how to stop it! <br>
+            By going through the software development life cycle. Below is a link that will take you to the planning stage.<br>
+            <a href="planning">Let's get started</a>
+        </div>
+    </body>
+</html>
